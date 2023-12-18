@@ -134,15 +134,15 @@ section {
 
 .home .image img {
     position: relative;
-    width: 125%;
-    bottom: 10rem;
-    right: 5.7rem;
+    width: 150%;
+    bottom: 15rem;
+    right: 9.1rem;
     transition: .5s;
 }
 
 .image img:hover {
-    transform: scale(1.15);
-    filter: drop-shadow(0 0 10px rgba(255, 242, 0, 0.9));
+    transform: scale(1.03);
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.9));
     
 }
 
