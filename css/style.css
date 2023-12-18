@@ -440,24 +440,6 @@ footer {
     font-size: 1.2rem;
 }
 
-/* .first img {
-    width: 100%;
-} */
-/* .card1 {
-    flex: 1;
-    background-color:wheat;
-}
-
-.card2 {
-    flex: 1;
-    background-color: aqua;
-}
-
-.card3 {
-    flex: 1;
-    background-color: fuchsia;
-} */
-
 @media screen and (max-width: 1375px) {
     html {
         font-size: 60%;
@@ -498,83 +480,72 @@ footer {
         font-size: 2rem;
         margin: 3rem 4rem;
     }
-}
 
-
-    /* .image img {
-        width: 380px;
-    }
-
-    .portfolio .con-portfolio {
-        flex-direction: column;
-    }
-
-    .card1, .card2, .card3 {
-        height: 40rem;
-        width: 40rem; */
-
-
-/* @media screen and (max-width: 1258px) {
-    html {
-        font-size: 55%;
-    }
-
-    .image img {
-        width: 340px;
+    .home-content h1 {
+        font-size: 4.5rem;
     }
 }
 
-@media screen and (max-width: 973px) {
+@media screen and (max-width:605px) {
     html {
         font-size: 45%;
     }
+}
 
-    .image img {
-        width: 280px;
+@media screen and (max-width:392px) {
+    .journey-content {
+        height: 28rem;
+    }
+
+    .scn {
+        height: 16rem;
     }
 }
 
-@media screen and (max-width: 940px) {
+@media screen and (max-width:381px) {
+    .journey-content {
+        height: 30rem;
+    }
+
+    .scn {
+        height: 16rem;
+    }
+}
+
+@media screen and (max-width:361px) {
+    .journey-content {
+        height: 33rem;
+    }
+
+    .scn {
+        height: 18rem;
+    }
+}
+
+@media screen and (max-width:325px) {
+    .journey-content {
+        height: 33rem;
+    }
+
+    .scn {
+        height: 20rem;
+    }
+}
+
+@media screen and (max-width:320px) {
+    html {
+        font-size: 40%;
+    }
+    
     .home-content h1 {
         font-size: 5rem;
     }
+
+    .journey-content {
+        height: 34rem;
+    }
+    
+    .scn {
+        height: 18rem;
+    }
 }
-
-@media screen and (max-width: 768px) {
-    .home {
-        flex-direction: column-reverse;
-        padding: 14rem 9%;
-        justify-content: space-evenly;
-        gap: 3rem;
-    }
-
-    .home-content h1 {
-        text-align: center
-    }
-
-    .home-content .text-animate {
-        width: 100%;
-    }
-
-    .home-content .text-animate h3 {
-        text-align: center;
-        
-    }
-
-    .home-content p {
-        text-align: center;
-    }
-} */
-
-
-/* Add your CSS styles here if needed */
-/* .sec-text::after {
-    content: '|';
-    animation: blink-caret 0.75s infinite alternate;
-}
-
-@keyframes blink-caret {
-    to {
-        opacity: 0;
-    }
-} */
