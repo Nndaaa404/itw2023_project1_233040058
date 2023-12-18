@@ -97,14 +97,19 @@
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me!</span></h2>
 
-        <form action="#">
-            <input type="text" name="name" placeholder="Full Name" autocomplete="off" required>
+        <form name="portfolio-contact-form">
+            <input type="text" name="nama" placeholder="Full Name" autocomplete="off" required>
             <input type="email" name="email" placeholder="Email Address" autocomplete="off" required>
-            <textarea id="message" rows="4" placeholder="How can i help you?" autocomplete="off" required></textarea>
+            <textarea id="message" rows="4" placeholder="How can i help you?" autocomplete="off" required name="pesan"></textarea>
 
             <button type="submit">Send</button>
         </form>
-    </section>
+
+        <div id="myAlert" class="alert">
+            <span id="alertMessage">Ini adalah pesan alert!</span>
+            <span class="close-btn" onclick="closeAlert()">×</span>
+        </div>
+        </section>
 
     <!-- Footer Design -->
     <footer class="footer">
@@ -123,7 +128,7 @@
        </div>
     </footer>
 
-</body>
-<script src="js/script.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/spreadsheets.js"></script>
 
 </html>
