@@ -1,11 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
 :root {
-    --bg-color: ;
     --text-color-b: #171717;
     --text-color-w: #F8F7F4;
     --text-shadow-b: 2px 2px 3px rgba(0,0,0,0.25);
-    --text-shadow-w: 2px 2px 3px rgba(255, 255, 255, 0.25);
     --box-shadow: 0 0 10px rgba(0,0,0,0.25);
     --secondary-color: #9cafe2;
 }
@@ -82,7 +80,6 @@ section {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap-reverse;
-    /* gap: rem; */
     column-gap: 5rem;
     row-gap: 2rem;
     cursor:default;
@@ -99,12 +96,10 @@ section {
     line-height: 1.3;
     text-align: center;
     color: var(--text-color-b);
-    /* text-wrap: balance; */
 }
 
 .home-content .text-animate {
     position: relative;
-    /* width: 32.8rem; */
 }
 
 .home-content .text-animate h3 {
@@ -119,7 +114,6 @@ section {
     font-size: 1.6rem;
     margin: 2rem 0 4rem;
     text-align: justify;
-    /* text-wrap: balance; */
 }
 
 .home .image {
@@ -188,16 +182,12 @@ section {
 .profil-content h3 {
     text-align: center;
     font-size: 2.6rem;
-    /* color: var(--text-color-b); */
-    /* text-shadow: var(--text-shadow-b); */
 }
 
 .profil-content p {
     text-align: justify;
     font-size: 1.6rem;
     margin: 2rem 0 3rem;
-    /* color: var(--text-color-b); */
-    /* text-shadow: var(--text-shadow-b); */
 }
 
 /* Journey Section */
@@ -347,13 +337,11 @@ form {
     display: flex;
     flex-direction: column;
     background: var(--secondary-color);
-    /* opacity: .; */
     padding: 2rem 4rem;
     width: 90%;
     max-width: 60rem;
     border-radius: 5px;
     box-shadow: var(--box-shadow);
-    /* border: 2px solid black; */
 }
 
 form input, form textarea {
@@ -382,7 +370,6 @@ textarea:focus::placeholder {
 form input:focus-within,
 form textarea:focus-within {
     border: 2px solid black;
-    /* opacity: 0.5; */
 }
 
 form button {
@@ -440,11 +427,12 @@ footer {
     font-size: 1.2rem;
 }
 
+/* Responsif */
+
 @media screen and (max-width: 1375px) {
     html {
         font-size: 60%;
     }
-
 }
 
 @media screen and (max-width: 1200px) {
