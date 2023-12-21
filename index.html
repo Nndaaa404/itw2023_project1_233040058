@@ -7,9 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
 
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/particle.css">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet"
-/>
 </head>
 
 <body>
@@ -30,6 +30,8 @@
     </header>
 
     <!-- Home Section -->
+    <div id="particles-js"></div>
+
     <section class="home" id="home">
         <div class="home-content">
             <h1>Hi, I'm <span>Ananda Rizky Maulana</span></h1>
@@ -39,7 +41,7 @@
         </div>
 
         <div class="image">
-            <img src="img/cutout-1702131263.png" alt="">
+            <img src="img/nndaaa3.jpg" alt="">
         </div>
     </section>
 
@@ -48,12 +50,16 @@
         <h2 class="heading">About <span>Me</span></h2>
 
         <div class="profil-img">
-            <img src="img/Foto Nndaaa3.jpeg" alt="">
+            <img src="img/service2.jpg" alt="">
         </div>
 
         <div class="profil-content">
             <h3>Mahasiswa Universitas Pasundan</h3>
-            <p>Halo, saya Ananda Rizky Maulana, seorang mahasiswa yang memiliki keinginan untuk menjadi pendidik di bidang komputer. Saat ini, saya sedang mengejar studi di bidang Teknik Informatika di Universitas Pasundan. Minat utama saya melibatkan Web Programming, Jaringan Komputer, dan Perangkat Keras Komputer. Saya meyakini bahwa setiap hari merupakan peluang untuk pembelajaran dan perkembangan, dan saya berkomitmen untuk senantiasa membuka diri terhadap pengalaman-pengalaman baru. </p>
+            <p>Halo, saya Ananda Rizky Maulana, seorang mahasiswa yang memiliki keinginan untuk menjadi pendidik di
+                bidang komputer. Saat ini, saya sedang mengejar studi di bidang Teknik Informatika di Universitas
+                Pasundan. Minat utama saya melibatkan Web Programming, Jaringan Komputer, dan Perangkat Keras Komputer.
+                Saya meyakini bahwa setiap hari merupakan peluang untuk pembelajaran dan perkembangan, dan saya
+                berkomitmen untuk senantiasa membuka diri terhadap pengalaman-pengalaman baru. </p>
         </div>
     </section>
 
@@ -87,9 +93,24 @@
         <h2 class="heading">Portfolio</h2>
 
         <div class="con-portfolio">
-            <div class="card first"></div>
-            <div class="card scn"></div>
-            <div class="card thrd"></div>
+            <div class="card first">
+                <img src="img/Screenshot (41).png" alt="">
+                <div class="overlay">
+                    <a href="https://www.google.com">Ini LINK NYA Yaaaaaaaaaa</a>
+                </div>
+            </div>
+            <div class="card scn">
+                <img src="img/Screenshot (41).png" alt="">
+                <div class="overlay">
+                    <a href="https://www.google.com">Ini LINK NYA Yaaaaaaaaaa</a>
+                </div>
+            </div>
+            <div class="card thrd">
+                <img src="img/Screenshot (41).png" alt="">
+                <div class="overlay">
+                    <a href="https://www.google.com">Ini LINK NYA Yaaaaaaaaaa</a>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -100,23 +121,26 @@
         <form name="portfolio-contact-form">
             <input type="text" name="nama" placeholder="Full Name" autocomplete="off" required>
             <input type="email" name="email" placeholder="Email Address" autocomplete="off" required>
-            <textarea id="message" rows="4" placeholder="How can i help you?" autocomplete="off" required name="pesan"></textarea>
+            <textarea id="message" rows="4" placeholder="How can i help you?" autocomplete="off" required
+                name="pesan"></textarea>
 
             <button type="submit">Send</button>
         </form>
 
         <div id="myAlert" class="alert">
             <span id="alertMessage">Ini adalah pesan alert!</span>
-            <span class="close-btn" onclick="closeAlert()">×</span>
+            <span class="close-btn" onclick="closeAlert()">X</span>
         </div>
-        </section>
+    </section>
 
     <!-- Footer Design -->
     <footer class="footer">
-       <div class="footer-con">
+        <div class="footer-con">
             <div class="social-icon">
-                <a href="https://www.facebook.com/ananda.rizkym.5?mibextid=rS40aB7S9Ucbxw6v"><i class="ri-facebook-circle-fill"></i></a>
-                <a href="https://www.instagram.com/ndaaa_588?igshid=OGQ5ZDc2ODk2ZA=="><i class="ri-instagram-line"></i></a>
+                <a href="https://www.facebook.com/ananda.rizkym.5?mibextid=rS40aB7S9Ucbxw6v"><i
+                        class="ri-facebook-circle-fill"></i></a>
+                <a href="https://www.instagram.com/ndaaa_588?igshid=OGQ5ZDc2ODk2ZA=="><i
+                        class="ri-instagram-line"></i></a>
                 <a href="https://discord.com/invite/BwRcKv9r"><i class="ri-discord-fill"></i></a>
                 <a href="https://github.com/Nndaaa404"><i class="ri-github-fill"></i></a>
                 <a href="mailto:anandaarizkymaulana@gmail.com"><i class="ri-mail-line"></i></a>
@@ -125,10 +149,15 @@
             <div class="footer-bottom">
                 <p>Copyright &copy;2023; Design by Ananda Rizky Maulana</p>
             </div>
-       </div>
+        </div>
     </footer>
 
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib -->
+    <!-- <script src="http://threejs.org/examples/js/libs/stats.min.js"></script> -->
+    <script src="js/particle.js"></script>
     <script src="js/script.js"></script>
     <script src="js/spreadsheets.js"></script>
+
+</body>
 
 </html>

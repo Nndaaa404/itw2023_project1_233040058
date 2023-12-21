@@ -3,9 +3,9 @@
 :root {
     --text-color-b: #171717;
     --text-color-w: #F8F7F4;
-    --text-shadow-b: 2px 2px 3px rgba(0,0,0,0.25);
-    --box-shadow: 0 0 10px rgba(0,0,0,0.25);
-    --secondary-color: #9cafe2;
+    --text-shadow-b: 2px 2px 3px rgba(0, 0, 0, 0.25);
+    --box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    --secondary-color: #f2fff0;
 }
 
 * {
@@ -25,7 +25,7 @@ html {
 }
 
 body {
-    background-image: linear-gradient( 135deg, #97ABFF 10%, #123597 100%);
+    background: linear-gradient(to bottom, #2c3e50, #4ca1af);
 }
 
 .header {
@@ -34,8 +34,8 @@ body {
     left: 0;
     width: 100%;
     padding: 2rem 9%;
-    background-color: transparent;
-    backdrop-filter: blur(90px);
+    background-color: #2c3e50;
+    /* backdrop-filter: blur(90px); */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -45,7 +45,7 @@ body {
 
 .logo {
     font-size: 2.5rem;
-    color: var(--text-color-w);
+    color: white;
     font-weight: 600;
 }
 
@@ -82,7 +82,7 @@ section {
     flex-wrap: wrap-reverse;
     column-gap: 5rem;
     row-gap: 2rem;
-    cursor:default;
+    cursor: default;
     text-shadow: var(--text-shadow-b);
 }
 
@@ -106,7 +106,7 @@ section {
     font-size: 3.2rem;
     font-weight: 700;
     color: transparent;
-    -webkit-text-stroke: .7px black;
+    -webkit-text-stroke: .7px white;
     text-align: center;
 }
 
@@ -120,7 +120,7 @@ section {
     width: 35rem;
     height: 35rem;
     overflow: hidden;
-    box-shadow: inset 0px 0px 6px 5px rgba(0,0,0,0.24);
+    box-shadow: inset 0px 0px 6px 5px rgba(0, 0, 0, 0.24);
     border-radius: 5px;
     background-color: transparent;
     backdrop-filter: blur(40px);
@@ -128,16 +128,20 @@ section {
 
 .home .image img {
     position: relative;
-    width: 150%;
-    bottom: 15rem;
-    right: 9.4rem;
+    width: 100%;
+    /* bottom: 15rem; */
+    /* right: 9.4rem; */
     transition: .5s;
+    filter: brightness(140%);
+    /* filter: grayscale(100%); */
 }
 
 .image img:hover {
     transform: scale(1.03);
     filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.9));
-    
+    filter: brightness(160%);
+    /* filter: grayscale(0); */
+
 }
 
 /* Profil Section */
@@ -186,8 +190,10 @@ section {
 
 .profil-content p {
     text-align: justify;
+    /* text-align: center; */
     font-size: 1.6rem;
     margin: 2rem 0 3rem;
+    color: var(--text-color-w);
 }
 
 /* Journey Section */
@@ -219,9 +225,21 @@ section {
     position: relative;
     padding: 7rem 9rem;
     background-color: var(--secondary-color);
+    /* background-image: linear-gradient( 135deg, #92FFC0 10%, #002661 100%); */
     box-shadow: var(--box-shadow);
     text-shadow: var(--text-shadow-b);
+    transition: all .5s;
 }
+
+.journey-content:hover {
+    background-color: #2c3e50;
+    transform: scale(1.02);
+    color: white;
+}
+
+/* .journey-content:hover p {
+    color: white;
+} */
 
 .scn {
     height: 16rem;
@@ -287,6 +305,7 @@ section {
 .journey-content p {
     font-size: 1.4rem;
     padding-bottom: .8rem;
+    /* transition: .5s; */
 }
 
 /* Portfolio Section */
@@ -309,18 +328,54 @@ section {
 }
 
 .card {
-    height: 20rem;
+    height: 19.2rem;
     width: 40rem;
     border-radius: 5px;
     box-shadow: var(--box-shadow);
     background-color: var(--secondary-color);
     overflow: hidden;
+    position: relative;
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center */
 }
 
+.card img {
+    position: absolute;
+    /* z-inde; */
+    width: 100%;
+
+}
+
+.card .overlay {
+    background: #000;
+    /* color: white; */
+    position: absolute;
+    /* top: 0; */
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+
+}
+
+.overlay a {
+    color: white;
+    font-size: 1.6rem;
+}
+
+.card:hover .overlay {
+    opacity: 1;
+}
+
+/* 
 .first img {
     width: 100%;
     height: 100%;
-}
+} */
 
 /* Contact Section */
 
@@ -345,20 +400,22 @@ form {
     box-shadow: var(--box-shadow);
 }
 
-form input, form textarea {
+form input,
+form textarea {
     color: var(--text-color-w);
     border: 2px solid rgb(255, 255, 255);
     margin: 1rem 0;
     padding: 2rem;
     outline: none;
-    background: #818FB4;
+    background: #2c3e50;
     font-size: 1.6rem;
     border-radius: 5px;
     box-shadow: var(--box-shadow);
     resize: none;
 }
 
-::placeholder {
+form input::placeholder,
+form textarea::placeholder {
     color: var(--text-color-w);
     transition: .5s;
 }
@@ -376,7 +433,7 @@ form textarea:focus-within {
 form button {
     margin: auto;
     padding: 1.5rem;
-    background: #363062;
+    background: #2c3e50;
     color: var(--text-color-w);
     font-size: 1.6rem;
     border: 0;
@@ -386,13 +443,16 @@ form button {
     padding: 2rem auto 0;
     border-radius: 5px;
     box-shadow: var(--box-shadow);
+    position: relative;
+    overflow: hidden;
 }
+
 
 /* Gaya CSS untuk alert */
 .alert {
-    position: absolute;
-    top: 50%;
-    left: 50%;
+    position: fixed;
+    bottom: 0;
+    right: -100px;
     transform: translate(-50%, -50%);
     display: none;
     padding: 1rem;
@@ -415,7 +475,7 @@ form button {
 /* Footer Design */
 
 footer {
-    background-color: royalblue;
+    background-color: #2c3e50;
 }
 
 .footer-con {
@@ -426,13 +486,31 @@ footer {
 .social-icon {
     display: flex;
     justify-content: center;
+    /* background-color: #fff; */
 }
 
 .social-icon a {
+    position: relative;
     padding: 1rem;
     background-color: white;
     margin: 0 1rem 2rem;
     border-radius: 50%;
+    overflow: hidden;
+}
+
+.social-icon a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: grey;
+    transition: left 0.3s ease;
+}
+
+.social-icon a:hover::before {
+    left: 0;
 }
 
 .social-icon a i {
@@ -474,17 +552,17 @@ footer {
     .navbar {
         position: absolute;
         top: 100%;
-        left: 0;
+        left: 100%;
         width: 100%;
         padding: 1rem 4%;
-        background-color: #97ABFF;
-        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, rgba(0,0,0,0.2));
+        background-color: #2c3e50;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.24);
         transition: .25s ease;
         transition-delay: .25s;
     }
 
     .navbar.active {
-        left: 100%;
+        left: 0;
         transition-delay: 0s;
     }
 
@@ -549,7 +627,7 @@ footer {
     html {
         font-size: 40%;
     }
-    
+
     .home-content h1 {
         font-size: 5rem;
     }
@@ -557,7 +635,7 @@ footer {
     .journey-content {
         height: 34rem;
     }
-    
+
     .scn {
         height: 18rem;
     }
