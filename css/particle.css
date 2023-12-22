@@ -1,6 +1,6 @@
 canvas {
     display: block;
-    vertical-align: bottom;
+    /* vertical-align: bottom; */
 }
 
 /* ---- particles.js container ---- */
@@ -10,7 +10,7 @@ canvas {
     height: 100%;
 }
 
-/* ---- stats.js ---- */
+/* ---- stats.js ----
 .count-particles {
     background: #000022;
     position: absolute;
@@ -33,7 +33,7 @@ canvas {
 
 #stats,
 .count-particles {
-    -webkit-user-select: none;
+    --webkit-user-select: none;
     margin-top: 5px;
     margin-left: 5px;
 }
@@ -45,4 +45,4 @@ canvas {
 
 .count-particles {
     border-radius: 0 0 3px 3px;
-}
+} */
