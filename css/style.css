@@ -1,11 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 :root {
-    --text-color-b: #171717;
-    --text-color-w: #F8F7F4;
-    --text-shadow-b: 2px 2px 3px rgba(0, 0, 0, 0.25);
+    --black: #171717;
+    --white: #F8F7F4;
+    --text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.25);
     --box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
-    --secondary-color: #f2fff0;
+    --box-color-1: #f2fff0;
+    --box-color-2: #2c3e50;
 }
 
 * {
@@ -34,26 +35,25 @@ body {
     left: 0;
     width: 100%;
     padding: 2rem 9%;
-    background-color: #2c3e50;
-    /* backdrop-filter: blur(90px); */
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
-    text-shadow: var(--text-shadow-b);
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.24);
+    background-color: var(--box-color-2);
+    text-shadow: var(--text-shadow);
 }
 
 .logo {
     font-size: 2.5rem;
-    color: white;
     font-weight: 600;
+    color: var(--white);
 }
 
 .navbar a {
     font-size: 1.7rem;
-    color: var(--text-color-w);
     font-weight: 500;
+    color: var(--white);
     margin-left: 3.5rem;
 }
 
@@ -63,11 +63,11 @@ body {
 }
 
 #menu-icon {
-    font-size: 3.3rem;
-    color: white;
-    cursor: pointer;
     display: none;
-    text-shadow: var(--text-color-b);
+    cursor: pointer;
+    font-size: 3.3rem;
+    color: var(--white);
+    text-shadow: var(--black);
 }
 
 section {
@@ -85,7 +85,7 @@ section {
     column-gap: 5rem;
     row-gap: 2rem;
     cursor: default;
-    text-shadow: var(--text-shadow-b);
+    text-shadow: var(--text-shadow);
 }
 
 .home-content {
@@ -97,8 +97,7 @@ section {
     font-weight: 700;
     line-height: 1.3;
     text-align: center;
-    /* color: var(--text-color-b); */
-    color: #fff;
+    color: var(--white);
 }
 
 .home-content .text-animate {
@@ -117,34 +116,24 @@ section {
     font-size: 1.6rem;
     margin: 2rem 0 4rem;
     text-align: justify;
-    /* color: blueviolet; */
 }
 
 .home .image {
     width: 35rem;
     height: 35rem;
     overflow: hidden;
-    /* box-shadow: inset 0px 0px 6px 5px rgba(0, 0, 0, 0.24); */
     border-radius: 5px;
-    /* background-color: transparent; */
-    /* backdrop-filter: blur(40px); */
 }
 
 .home .image img {
-    position: relative;
     width: 100%;
-    /* bottom: 15rem; */
-    /* right: 9.4rem; */
     transition: .5s;
     filter: brightness(140%);
-    /* filter: grayscale(100%); */
 }
 
 .image img:hover {
     transform: scale(1.03);
-    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.9));
     filter: brightness(160%);
-    /* filter: grayscale(0); */
 
 }
 
@@ -156,23 +145,22 @@ section {
     align-items: center;
     flex-direction: column;
     gap: 2rem;
-    text-shadow: var(--text-shadow-b);
-    color: var(--text-color-b);
+    text-shadow: var(--text-shadow);
+    color: var(--black);
 }
 
 .heading {
     font-size: 5rem;
     text-align: center;
-    text-shadow: var(--text-shadow-b);
-    color: var(--text-color-b);
+    text-shadow: var(--text-shadow);
+    color: var(--black);
 }
 
 .heading span {
-    color: var(--text-color-w);
+    color: var(--white);
 }
 
 .profil-img {
-    position: relative;
     width: 25rem;
     height: 25rem;
     border-radius: 5%;
@@ -180,6 +168,7 @@ section {
     align-items: center;
     justify-content: center;
     box-shadow: var(--box-shadow);
+    filter: brightness(120%);
 }
 
 .profil-img img {
@@ -190,15 +179,14 @@ section {
 .profil-content h3 {
     text-align: center;
     font-size: 2.6rem;
-    color: var(--text-color-b);
+    color: var(--black);
 }
 
 .profil-content p {
     text-align: justify;
-    /* text-align: center; */
     font-size: 1.6rem;
     margin: 2rem 0 3rem;
-    color: var(--text-color-w);
+    color: var(--white);
 }
 
 /* Journey Section */
@@ -223,28 +211,23 @@ section {
 }
 
 .journey-content {
+    position: relative;
     height: 26rem;
     width: 50rem;
     margin: 2rem;
     border-radius: 5px;
-    position: relative;
     padding: 7rem 9rem;
-    background-color: var(--secondary-color);
-    /* background-image: linear-gradient( 135deg, #92FFC0 10%, #002661 100%); */
+    background-color: var(--box-color-1);
     box-shadow: var(--box-shadow);
-    text-shadow: var(--text-shadow-b);
+    text-shadow: var(--text-shadow);
     transition: all .5s;
 }
 
 .journey-content:hover {
-    background-color: #2c3e50;
+    background-color: var(--box-color-2);
+    color: var(--white);
     transform: scale(1.02);
-    color: white;
 }
-
-/* .journey-content:hover p {
-    color: white;
-} */
 
 .scn {
     height: 16rem;
@@ -256,8 +239,8 @@ section {
     height: 14.3rem;
     top: 7.5rem;
     left: 6rem;
-    background-color: #000;
     border-radius: 5px;
+    background-color: var(--black);
     box-shadow: var(--box-shadow);
 }
 
@@ -269,30 +252,30 @@ section {
     position: absolute;
     top: 8rem;
     left: 5.78rem;
-    background-color: white;
     width: 1rem;
     height: 1rem;
     border-radius: 50%;
+    background-color: var(--white);
 }
 
 .journey-content .dot2 {
     position: absolute;
     top: 16rem;
     left: 5.78rem;
-    background-color: white;
     width: 1rem;
     height: 1rem;
     border-radius: 50%;
+    background-color: var(--white);
 }
 
 .journey-content .dot3 {
     position: absolute;
     top: 8rem;
     left: 5.78rem;
-    background-color: white;
     width: 1rem;
     height: 1rem;
     border-radius: 50%;
+    background-color: var(--white);
 }
 
 .journey-content h3 {
@@ -310,7 +293,6 @@ section {
 .journey-content p {
     font-size: 1.4rem;
     padding-bottom: .8rem;
-    /* transition: .5s; */
 }
 
 /* Portfolio Section */
@@ -333,54 +315,59 @@ section {
 }
 
 .card {
+    position: relative;
     height: 19.2rem;
     width: 40rem;
     border-radius: 5px;
-    box-shadow: var(--box-shadow);
-    background-color: var(--secondary-color);
     overflow: hidden;
-    position: relative;
-    /* display: flex; */
-    /* align-items: center; */
-    /* justify-content: center */
+    background-color: var(--box-color-1);
+    box-shadow: var(--box-shadow);
 }
 
 .card img {
     position: absolute;
-    /* z-inde; */
     width: 100%;
-
 }
 
 .card .overlay {
-    background: #000;
-    /* color: white; */
+    background: transparent;
+    backdrop-filter: blur(15px);
     position: absolute;
-    /* top: 0; */
     width: 100%;
     height: 100%;
     opacity: 0;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     transition: .5s;
+    gap: 1rem;
+    text-shadow: var(--text-shadow);
+    box-shadow: var(--box-shadow);
+}
 
+.overlay h5 {
+    font-size: 2rem;
+    color: var(--white);
+}
+
+.overlay p {
+    font-size: 1.6rem;
+    color: var(--white);
 }
 
 .overlay a {
-    color: white;
     font-size: 1.6rem;
+    font-weight: 600;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    color: var(--black);
+    background-color: var(--box-color-1);
 }
 
 .card:hover .overlay {
     opacity: 1;
 }
-
-/* 
-.first img {
-    width: 100%;
-    height: 100%;
-} */
 
 /* Contact Section */
 
@@ -397,22 +384,22 @@ section {
 form {
     display: flex;
     flex-direction: column;
-    background: var(--secondary-color);
     padding: 2rem 4rem;
     width: 90%;
     max-width: 60rem;
     border-radius: 5px;
+    background: var(--box-color-1);
     box-shadow: var(--box-shadow);
 }
 
 form input,
 form textarea {
-    color: var(--text-color-w);
+    color: var(--white);
     border: 2px solid rgb(255, 255, 255);
     margin: 1rem 0;
     padding: 2rem;
     outline: none;
-    background: #2c3e50;
+    background: var(--box-color-2);
     font-size: 1.6rem;
     border-radius: 5px;
     box-shadow: var(--box-shadow);
@@ -421,7 +408,7 @@ form textarea {
 
 form input::placeholder,
 form textarea::placeholder {
-    color: var(--text-color-w);
+    color: var(--white);
     transition: .5s;
 }
 
@@ -439,8 +426,8 @@ form textarea:focus-within {
 form button {
     margin: auto;
     padding: 1.5rem;
-    background: #2c3e50;
-    color: var(--text-color-w);
+    background: var(--box-color-2);
+    color: var(--white);
     font-size: 1.6rem;
     border: 0;
     outline: none;
@@ -456,9 +443,9 @@ form button {
 
 /* Gaya CSS untuk alert */
 .alert {
-    position: fixed;
-    bottom: 0;
-    right: -100px;
+    position: absolute;
+    bottom: 11rem;
+    right: -13rem;
     transform: translate(-50%, -50%);
     display: none;
     padding: 1rem;
@@ -481,7 +468,7 @@ form button {
 /* Footer Design */
 
 footer {
-    background-color: #2c3e50;
+    background-color: var(--box-color-2);
 }
 
 .footer-con {
@@ -492,13 +479,12 @@ footer {
 .social-icon {
     display: flex;
     justify-content: center;
-    /* background-color: #fff; */
 }
 
 .social-icon a {
     position: relative;
     padding: 1rem;
-    background-color: white;
+    background-color: var(--white);
     margin: 0 1rem 2rem;
     border-radius: 50%;
     overflow: hidden;
@@ -520,21 +506,24 @@ footer {
 }
 
 .social-icon a i {
-    color: black;
+    color: var(--black);
     font-size: 2.1rem;
     opacity: .9;
 }
 
 .footer-bottom {
-    background-color: #000;
+    background-color: var(--black);
     padding: 2rem;
     text-align: center;
 }
 
 .footer-bottom p {
-    color: white;
+    color: var(--white);
     font-size: 1.2rem;
 }
+
+
+
 
 /* Responsif */
 
@@ -561,7 +550,7 @@ footer {
         left: 100%;
         width: 100%;
         padding: 1rem 4%;
-        background-color: #2c3e50;
+        background-color: var(--box-color-2);
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.24);
         transition: .25s ease;
         transition-delay: .25s;
@@ -597,6 +586,18 @@ footer {
     .scn {
         height: 16rem;
     }
+
+    .journey-content hr {
+        height: 17rem;
+    }
+
+    .scn hr {
+        height: 4.5rem;
+    }
+
+    .journey-content .dot2 {
+        top: 19rem;
+    }
 }
 
 @media screen and (max-width:381px) {
@@ -607,6 +608,14 @@ footer {
     .scn {
         height: 16rem;
     }
+
+    .journey-content hr {
+        height: 19.3rem;
+    }
+
+    .scn hr {
+        height: 4.5rem;
+    }
 }
 
 @media screen and (max-width:361px) {
@@ -616,6 +625,14 @@ footer {
 
     .scn {
         height: 18rem;
+    }
+
+    .journey-content hr {
+        height: 22.4rem;
+    }
+
+    .scn hr {
+        height: 4.5rem;
     }
 }
 
@@ -632,10 +649,6 @@ footer {
 @media screen and (max-width:320px) {
     html {
         font-size: 40%;
-    }
-
-    .home-content h1 {
-        font-size: 5rem;
     }
 
     .journey-content {
